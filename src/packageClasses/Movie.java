@@ -8,8 +8,8 @@ public class Movie {
 	private int priceCode;
 
 	public Movie(String newtitle, int newpriceCode) {
-		title = newtitle;
-		priceCode = newpriceCode;
+		setTitle(newtitle);
+		setPriceCode(newpriceCode);
 	}
 
 	double getCharge(int daysRented) {
@@ -49,5 +49,9 @@ public class Movie {
 
 	public String getTitle() {
 		return title;
+	}
+
+	private void setTitle(String title) {
+		this.title = title;
 	};
 }
